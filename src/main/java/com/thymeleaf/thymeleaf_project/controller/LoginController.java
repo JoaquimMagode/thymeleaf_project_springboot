@@ -32,6 +32,7 @@ public class LoginController {
     @GetMapping("/home")
     public String home(Model model) {
         model.addAttribute("message", "Welcome, you are logged in!");
+        model.addAttribute("username":username);
         return "home";
     }
 }
