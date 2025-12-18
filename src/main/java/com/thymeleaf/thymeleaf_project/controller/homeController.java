@@ -12,6 +12,6 @@ public class homeController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("message", "Welcome to the Home Page!");
-        return "home";
+        return "login";
     }
 }
